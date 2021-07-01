@@ -1,0 +1,24 @@
+body{
+    border: 1px solid red;
+    background: lavender;
+    display: block;
+    width: 700px;
+    height: 900px;
+}
+.container{
+    display: inline;
+    color: white;
+    font-size:20px;
+    text-shadow: 1px 0 1px rgb(141, 70, 141), 
+    0 1px 1px rgb(141, 70, 141), 
+    -1px 0 1px rgb(141, 70, 141), 
+    0 -1px 1px rgb(141, 70, 141);
+    text-align: center;
+}
+.price{
+    font-size: 200%;
+}
+.package-name{
+    color: rgb(78, 78, 226);
+    font-size: 150%;
+}
