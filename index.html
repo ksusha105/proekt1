@@ -9,36 +9,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <div class="row">
             <h1>Прогноз погоды</h1>
         </div>
     </div>
-
-    <div class="Mogilev">
-        <div>
-            <p class="city"></p>
-        </div>
-        <div>
-            <p class="temp"></p>
-            <p class="temp2"></p>
-        </div>
-        <div>
-            <p class="picture"></p>
-        </div> 
-        <div>
-            <p class="weather"></p>
-        </div>
-        <div>
-            <p class="wind"></p>
-        </div>
-        <div>
-            <p class="pressure"></p>
-        </div>
-        <div>
-            <p class="humidity"></p>
+    <div class="weathersearch">
+        <div class="Mogilev">
+            <div>
+                <p class="city"></p>
+                <p class="temp"></p>
+                <p class="temp2"></p>
+            </div> 
+            <div>
+                <p class="icon"></p>
+                 <p class="weather"></p>
+                
+            </div>
+            <div>
+               
+            </div>
+            <div>
+                <p class="wind"></p>
+           
+                <p class="pressure"></p>
+            
+                <p class="humidity"></p>
+            </div>
         </div>
     </div>
-    <script src="js.js"></script>
+    <form class="form" id="form">
+        <p><input id="search" type="search" placeholder="Погода по городу" width="auto">
+            <input id="btn" type="submit" value="Найти" width="auto"></p>
+    </form>  
+    <div class="showforecast">
+    </div>
+    <script type="module" src="js.js"></script>
 </body>
 </html>

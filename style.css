@@ -1,11 +1,62 @@
 body{
-    border: 3px solid rgb(103, 103, 236);
+    background-color: rgb(217, 230, 248);
+}
+.row h1{
+    color:rgb(0, 0, 66);
+}
+.Mogilev{
+    margin-top: 10px;
+    border: 3px solid;
+    background: rgb(158, 214, 240);
     display: block;
-    width: 250px;
-    height: 450px;
-    text-align: center;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
 }
 .city{
     font-weight: bold;
     font-size: 20px;
+    color: darkblue;
+}
+#btn{
+    font-size: 20px;
+    color: royalblue;
+}
+.temp{
+    font-size: 25px;
+    font-weight: bold;
+}
+.temp2{
+    font-size: 15px;
+}
+.icon{
+    font-size: 0.1px;
+}
+.weather{
+    font-weight: bold;
+}
+.city,.temp,.temp2{
+    margin-left: 10px;
+}
+#sear{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid rgb(58, 58, 150);
+}
+.il{
+   
+    list-style-type: none;
+    width: inherit;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+.showforecast{
+    color: royalblue;
+    display: block;
+}
+.weatherDaily {
+    margin-left: 20px;
 }
