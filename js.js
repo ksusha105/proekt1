@@ -20,6 +20,8 @@ const pressureEl = document.querySelector('.pressure');
 const city = document.querySelector('.city');
 const humidityEl = document.querySelector('.humidity');
 const weatherEl = document.querySelector('.weather');
+var x = document.getElementById("contain");
+
 
 fetch(`${Url}?q=${defaultCity}&lang=ru&units=metric${KEY}`)
     .then(function(resp) { return resp.json()})
@@ -81,3 +83,14 @@ fetch(`${Url}?q=${defaultCity}&lang=ru&units=metric${KEY}`)
         }
     
     }); 
+    
+var x = document.getElementById("contain");
+
+x.addEventListener("click", myFunction);
+
+function myFunction() {
+  var element = document.getElementById("nav");
+  element.classList.toggle("open");
+  
+  x.classList.toggle("change");
+}
