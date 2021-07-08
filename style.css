@@ -4,6 +4,9 @@
 }
 body{
   background-color: rgb(217, 230, 248);
+  margin: 0px auto;
+  width: 1100px;
+  height: 300px;
 }
 
 .row h1{
@@ -13,11 +16,11 @@ body{
 
 .Mogilev{
   margin-top: 40px;
-  border: 3px solid;
+  border: 3px solid rgb(27, 21, 75);
   background: rgb(158, 214, 240);
   display: block;
-  width: 400px;
-  height: 150px;
+  width: 330px;
+  height: 130px;
   display: flex;
   flex-direction: row;
 }
@@ -38,16 +41,11 @@ body{
   font-size: 25px;
   font-weight: bold;
   padding-top: 15px;
+  text-align: center;
 }
 .temp2{
   font-size: 15px;
   padding-top: 20px;
-}
-
-.icon{
-  padding-top: 0;
-  font-size: 0.1px;
-  text-align: center;
 }
 
 .weather{
@@ -59,11 +57,15 @@ body{
   margin-left: 10px;
 }
 
-#sear{
+#search{
   text-align: center;
   font-weight: bold;
   font-size: 15px;
-  border: 3px solid rgb(58, 58, 150);
+  border: 2px solid rgb(92, 92, 179);
+}
+
+.weather-info{
+  border: 1px red;
 }
 
 .il{
@@ -81,7 +83,11 @@ body{
 }
 
 .weatherDaily {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+.pressure,.wind,.humidity{
+  padding-top: 15px ;
 }
 
 header .wrapper {

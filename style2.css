@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(209, 238, 250);
+}    
+
+#table{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 150px;
+    font-size: 20px;
+}
+#name,#password,#password_2,#email{
+    font-size: 27px;
+    border: 2px solid;
+}
+#form{
+    border: 2px solid rgb(180, 158, 236);
+    padding: 15px;
+    background: rgb(211, 207, 252);
+}
+#submit2{
+   width: 150px;
+   height: 50px;
+   font-size: 20px;
+   color: darkblue;
+   border: 2px outset rgb(156, 173, 245);
+   background: rgb(213, 213, 248);
+}
+.registration{
+    color: rgb(34, 34, 105);
+}
+label{
+    font-size: 20px;
+}
