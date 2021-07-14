@@ -1,24 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body{
-    border: 1px solid red;
-    background: lavender;
+  background-color: rgb(217, 230, 248);
+  margin: 0px auto;
+  width: 1100px;
+  height: 300px;
+}
+
+.row h1{
+  color:#2929af;
+  text-align: center;
+}
+
+.Mogilev{
+  margin-top: 40px;
+  border: 3px solid rgb(27, 21, 75);
+  background: rgb(158, 214, 240);
+  display: block;
+  width: 330px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.city{
+  padding: 2px;
+  font-weight: bold;
+  font-size: 20px;
+  color: darkblue;
+}
+
+#btn{
+  font-size: 20px;
+  color: royalblue;
+}
+
+.temp{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-align: center;
+}
+.temp2{
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.weather{
+  font-weight: bold;
+  text-align: center;
+}
+
+.city,.temp,.temp2{
+  margin-left: 10px;
+}
+
+#search{
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid rgb(92, 92, 179);
+}
+
+.weather-info{
+  border: 1px red;
+}
+
+.il{
+   
+  list-style-type: none;
+  width: inherit;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.showforecast{
+    color: royalblue;
     display: block;
-    width: 700px;
-    height: 900px;
 }
-.container{
-    display: inline;
-    color: white;
-    font-size:20px;
-    text-shadow: 1px 0 1px rgb(141, 70, 141), 
-    0 1px 1px rgb(141, 70, 141), 
-    -1px 0 1px rgb(141, 70, 141), 
-    0 -1px 1px rgb(141, 70, 141);
-    text-align: center;
+
+.weatherDaily {
+  margin-left: 30px;
 }
-.price{
-    font-size: 200%;
+
+.pressure,.wind,.humidity{
+  padding-top: 15px ;
 }
-.package-name{
-    color: rgb(78, 78, 226);
-    font-size: 150%;
+
+header .wrapper {
+  width: 100%; 
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-shadow: white -1px -1px 0, white 1px 1px 0;
+  text-decoration: none;
+}
+
+#nav {
+  top: 0;
+  left: 0;
+  font-size: 34px;
+  position: fixed;
+  overflow: hidden;
+  background: rgb(164, 199, 231);
+  height: 0;
+  max-height: 0px; 
+  list-style-type: none;
+  padding-left: 60px;
+  transition: ease-out 0.3s;
+}
+#nav.open {
+  padding-top: 50px;
+  height: 100%;
+  max-height: 100%; 
+  transition: ease-out 0.3s;
+}
+
+#nav li {
+  top: 0;
+  float: none;
+  width: 300px; 
+  margin: 0;
+  transition: ease-out 1s;
+}
+#contain {
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  background-color: rgb(38, 105, 192);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
 }
